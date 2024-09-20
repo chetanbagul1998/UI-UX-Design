@@ -1,0 +1,75 @@
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #232629;
+    color: white;
+    height: 100vh;
+    /* transition: width 0.3s ease; Smooth transition for collapsing */
+    transition: all 0.3s ease;
+    /* position: fixed; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    z-index: 100;
+    overflow: hidden; 
+  }
+  
+  /* Sidebar collapsed */
+  .sidebar.collapsed {
+    width: 60px; 
+  }
+  
+  /* Hamburger button */
+  .hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+    cursor: pointer;
+    align-self: flex-start; 
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding: 10px 0;
+  }
+  
+  .nav-links a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    width: 100%; 
+  }
+  
+  .nav-links a svg {
+    font-size: 24px;
+  }
+  
+  .nav-links a span {
+    margin-left: 15px;
+    white-space: nowrap; 
+  }
+  
+  .sidebar.collapsed .nav-links a span {
+    display: none; 
+  }
+  
+  .sidebar.collapsed .nav-links a {
+    justify-content: center; 
+  }
+  
+  .nav-links a:hover {
+    background-color: #343a40;
+    border-radius: 4px;
+  }
+
+  

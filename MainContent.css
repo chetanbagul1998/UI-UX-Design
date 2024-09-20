@@ -1,0 +1,45 @@
+
+  .main-content {
+    margin-left: 200px; /*  sidebar is expanded */
+    padding: 20px;
+    background-color: #f8f9fa; 
+    min-height: 100vh; 
+    transition: margin-left 0.3s ease; 
+}
+
+.collapsed .main-content {
+    margin-left: 60px; /* sidebar is collapsed */
+}
+
+.page-content {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+}
+
+.page-header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.page-description {
+    font-size: 16px;
+    color: #6c757d; 
+    line-height: 1.6;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    .main-content {
+      margin-left: 60px; 
+      padding: 15px;
+    }
+
+    .page-content {
+      padding: 15px;
+    }
+}
